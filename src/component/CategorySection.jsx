@@ -91,9 +91,8 @@ const CategorySection = () => {
 
 export default CategorySection;
 
-
 // import React from 'react';
-// import { motion } from 'framer-motion';
+// import { easeInOut, motion } from 'framer-motion';
 // import AllPurposeImg from '../assets/cat1.png';
 // import KitchenImg from '../assets/cat2.png';
 // import BathroomImg from '../assets/cat3.png';
@@ -111,56 +110,58 @@ export default CategorySection;
 // ];
 
 // const CategorySection = () => {
-//   // Duplicate categories to create a seamless loop
-//   const duplicatedCategories = [...categories, ...categories];
+//   // Duplicate categories for seamless looping
+//   const extendedCategories = [...categories, ...categories];
 
 //   return (
-//     <div className="bg-white py-12 px-4 sm:px-8 lg:px-16 xl:px-24 2xl:px-40">
-//       <div className="max-w-screen-2xl mx-auto">
-//         <motion.h2
-//           className="text-2xl sm:text-3xl font-bold text-center mt-6 mb-10 text-black"
-//           animate={{ opacity: 1, y: 10 }}
-//           initial={{ opacity: 0, y: -20 }}
-//           transition={{ duration: 0.6, ease: "easeInOut" }}
-//         >
-//           Browse Categories
-//         </motion.h2>
-
-//         <div className="overflow-hidden">
-//           <motion.div
-//             className="flex gap-6"
-//             animate={{
-//               x: ['0%', '-50%'], // Move from start to halfway for seamless looping
-//             }}
-//             transition={{
+//     <div className="bg-white py-8 px-4 sm:px-6 md:px-12 lg:px-20 overflow-hidden">
+//       <motion.h2
+//         className="text-2xl sm:text-3xl font-bold text-center mb-8 text-black"
+//         animate={{ opacity: 1, y: 0 }}
+//         initial={{ opacity: 0, y: -20 }}
+//         transition={{ duration: 0.6, ease: "easeInOut" }}
+//       >
+//         Browse Categories
+//       </motion.h2>
+//       <div className="relative w-full">
+//         <motion.div
+//           className="flex"
+//           animate={{
+//             x: ['0%', '-50%'],
+//             transition: {
 //               x: {
 //                 repeat: Infinity,
 //                 repeatType: 'loop',
-//                 duration: 20, // Adjust speed of marquee
+//                 duration: 20,
 //                 ease: 'linear',
 //               },
-//             }}
-//           >
-//             {duplicatedCategories.map((category, index) => (
-//               <div
-//                 key={index}
-//                 className="flex flex-col items-center flex-shrink-0"
-//               >
-//                 <img
-//                   src={category.image}
-//                   alt={category.title}
-//                   className="w-36 h-36 sm:w-40 sm:h-40 lg:w-44 lg:h-44 object-cover rounded-xl shadow-md"
-//                 />
-//                 <p className="mt-3 text-xl font-medium text-black text-center">
-//                   {category.title}
-//                 </p>
-//               </div>
-//             ))}
-//           </motion.div>
-//         </div>
+//             },
+//           }}
+//           style={{ width: '200%' }} 
+//         >
+//           {extendedCategories.map((category, index) => (
+//             <div
+//               key={index}
+//               className="flex flex-col items-center mx-2 sm:mx-3 md:mx-4 flex-shrink-0"
+//               style={{ width: 'calc(100% / 6 - 1rem)' }} 
+//             >
+//               <motion.img
+//                 src={category.image}
+//                 alt={category.title}
+//                 className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover rounded-xl shadow-md"
+//                 whileHover={{ scale: 1.05 }}
+//                 transition={{ duration: 0.3 }}
+//               />
+//               <p className="mt-2 text-base sm:text-lg md:text-xl font-medium text-black text-center">
+//                 {category.title}
+//               </p>
+//             </div>
+//           ))}
+//         </motion.div>
 //       </div>
 //     </div>
 //   );
 // };
 
 // export default CategorySection;
+ 
