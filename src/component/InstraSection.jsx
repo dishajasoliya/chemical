@@ -85,8 +85,6 @@ const InstraSection = () => {
             style={{ transformStyle: 'preserve-3d' }}
             whileHover={{
              scale:0.9,
-              // rotateY: 10,
-              // rotateX: -10,
               transition: { type: 'spring', stiffness: 200, damping: 10 },
             }}
           >
@@ -102,7 +100,6 @@ const InstraSection = () => {
         ))}
       </div>
 
-     
       <motion.button
         onClick={handleViewInstagramClick}
         className="mt-8 bg-[#393185] text-white px-6 py-2 rounded hover:bg-[#2e2d73] transition duration-300"
