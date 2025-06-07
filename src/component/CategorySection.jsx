@@ -60,7 +60,6 @@ const CategorySection = () => {
   return (
     <div className="bg-white py-12 px-6 md:px-12 lg:px-20">
 
-      {/* <h2 className="text-2xl sm:text-3xl font-semibold text-center mt-6 mb-10 text-black">Browse Categories</h2> */}
       <motion.h2 
       className="text-2xl sm:text-3xl font-bold text-center mt-6 mb-10 text-black"
       animate={{ opacity:1, y:10}}
