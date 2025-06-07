@@ -102,7 +102,7 @@ const NewArrival = () => {
   const visibleProducts = showAll ? products : products.slice(0, 4);
 
   return (
-    <section className="bg-white py-12 px-4 sm:px-8 lg:px-16 xl:px-24 ">
+    <section className="bg-white py-12 px-4 sm:px-8 lg:px-16 xl:px-20 ">
       <div className="max-w-screen-2xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">

@@ -58,7 +58,7 @@ const categories = [
 
 const CategorySection = () => {
   return (
-    <div className="bg-white py-12 px-6 md:px-12 lg:px-20">
+    <div className="bg-white py-12 px-6 md:px-12 lg:px-20 xl:px-20">
 
       <motion.h2 
       className="text-2xl sm:text-3xl font-bold text-center mt-6 mb-10 text-black"

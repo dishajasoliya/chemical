@@ -68,7 +68,7 @@ const InstraSection = () => {
   };
 
   return (
-    <section className="py-12 bg-white text-center px-6 md:px-12 lg:px-20">
+    <section className="py-12 bg-white text-center px-6 md:px-12 lg:px-20 xl:px-20">
       <h2 className="text-2xl font-semibold mb-2 text-black">Follow Us on Instagram</h2>
       <h4 className="text-[#6B6B6B] font-semibold mb-6">@hariomchemical</h4>
 
