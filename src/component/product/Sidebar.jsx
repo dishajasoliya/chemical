@@ -205,12 +205,13 @@ export default function Sidebar() {
                     className="group border rounded-md overflow-hidden relative bg-white max-w-[280px] w-full shadow-sm hover:shadow-md transition"
                     style={{ borderColor: "#B4B4FF" }}
                   >
-                    <div className="relative w-full h-70 bg-gray-100">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover group-hover:brightness-75 transition"
-                      />
+                    
+                      <div className="relative w-full h-[280px] bg-gray-100">
+                         <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover group-hover:brightness-75 transition"
+                        />
                       <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                         <button className="bg-[#393185] w-9 h-9 flex items-center justify-center rounded-full">
                           <FiHeart className="text-white w-4 h-4" />
