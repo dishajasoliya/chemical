@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import Header from './component/Header';
-// import LoginModal from './component/LoginModal';
+import LoginModal from './component/LoginModal';
 import Footer from './component/Footer';
 import Home from './page/Home';
 import Product from './page/Product';
@@ -27,7 +27,7 @@ const AppContent = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {!hideHeaderFooter && <Header />}
-       {/* <LoginModal/> */}
+       <LoginModal/>
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,10 +42,10 @@ const AppContent = () => {
           <Route path="/OrderHistory" element={<OrderHistory />} />
           <Route path="/DeleteAccount" element={<DeleteAccount />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Login" element={<Login/>} />
         </Routes>
       </main>
-
+      
       {!hideHeaderFooter && <Footer />}
     </div>
   );

@@ -9,8 +9,7 @@ const LoginModal = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 5 * 60 * 1000); // 5 minutes in ms
-
+    }, 5 * 60 * 1000); 
     return () => clearTimeout(timer);
   }, []);
 
