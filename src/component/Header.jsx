@@ -111,7 +111,7 @@ import logo from '../assets/logo.png';
 import logoimg from '../assets/logoimg.png';
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(prev => !prev);
@@ -179,7 +179,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer (Header stays visible) */}
+     
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
