@@ -118,11 +118,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-white text-sm">
-              <li><Link to="/Home" className="hover:underline" onClick={scrollToTop}>Home</Link></li>
-              <li><Link to="/About" className="hover:underline" onClick={scrollToTop}>About</Link></li>
-              <li><Link to="/Product" className="hover:underline" onClick={scrollToTop}>All Product</Link></li>
-              <li><Link to="/Product" className="hover:underline" onClick={scrollToTop}>Combos</Link></li>
-              <li><Link to="/Contact" className="hover:underline" onClick={scrollToTop}>Contact</Link></li>
+              <li><Link to="/Home" className="hover:no-underline" onClick={scrollToTop}>Home</Link></li>
+              <li><Link to="/About" className="hover:no-underline" onClick={scrollToTop}>About</Link></li>
+              <li><Link to="/Product" className="hover:no-underline" onClick={scrollToTop}>All Product</Link></li>
+              <li><Link to="/Product" className="hover:no-underline" onClick={scrollToTop}>Combos</Link></li>
+              <li><Link to="/Contact" className="hover:no-underline" onClick={scrollToTop}>Contact</Link></li>
             </ul>
           </div>
 
@@ -130,11 +130,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-2 text-sm text-white">
-              <li><Link to="/TrackOrder" className="hover:underline" onClick={scrollToTop}>Track Order</Link></li>
-              <li><Link to="/Returns" className="hover:underline" onClick={scrollToTop}>Return & Exchange</Link></li>
-              <li><Link to="/ShippingPolicy" className="hover:underline" onClick={scrollToTop}>Shipping Policy</Link></li>
-              <li><Link to="/FAQs" className="hover:underline" onClick={scrollToTop}>FAQs</Link></li>
-              <li><Link to="/PrivacyPolicy" className="hover:underline" onClick={scrollToTop}>Privacy Policy</Link></li>
+              <li><Link to="/TrackOrder" className="hover:no-underline" onClick={scrollToTop}>Track Order</Link></li>
+              <li><Link to="/Returns" className="hover:no-underline" onClick={scrollToTop}>Return & Exchange</Link></li>
+              <li><Link to="/ShippingPolicy" className="hover:no-underline" onClick={scrollToTop}>Shipping Policy</Link></li>
+              <li><Link to="/FAQs" className="hover:no-underline" onClick={scrollToTop}>FAQs</Link></li>
+              <li><Link to="/PrivacyPolicy" className="hover:no-underline" onClick={scrollToTop}>Privacy Policy</Link></li>
             </ul>
           </div>
 

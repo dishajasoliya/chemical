@@ -118,7 +118,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-[#393185] text-white top-0 z-50 sticky">
+    <header className="w-full bg-[#393185] text-white top-0 z-50 ">
       {/* Top Bar */}
       <div className="text-center py-2 border-b border-white">
         Free shipping on all orders above $499
