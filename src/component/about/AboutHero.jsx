@@ -59,7 +59,7 @@ const AboutHero = () => {
       <img
         src={PromoBanner}
         alt="Background"
-        className="absolute inset-0 w-full h-full  object-cover  opacity-20 -z-10 rotate-[-180deg]"
+        className="absolute inset-0 w-full h-full  object-cover bg-black opacity-100 -z-10 rotate-[-180deg]"
       />
 
       {/* Content */}
